@@ -1,4 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="36px" viewBox="0 0 18 36" zoomAndPan="disable">
-	<line x1="0" y1="0" x2="18" y2="18" style="stroke:#ffffff;stroke-width:1.5" />
-	<line x1="0" y1="36" x2="18" y2="18" style="stroke:#ffffff;stroke-width:1.5" />
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90px" height="66px" viewBox="0 0 90 66" zoomAndPan="disable">
+
+	<line x1="1" y1="1" x2="90" y2="1" style="stroke:#fff;stroke-width:1" />
+	<line x1="1" y1="1" x2="45.5" y2="46" style="stroke:#fff;stroke-width:1" />
+	<line x1="90" y1="1" x2="45.5" y2="46" style="stroke:#fff;stroke-width:1" />
+	
+	<line x1="1" y1="21" x2="90" y2="21" style="stroke:#fff;stroke-width:1" />
+	<line x1="1" y1="21" x2="45.5" y2="66" style="stroke:#fff;stroke-width:1" />
+	<line x1="90" y1="21" x2="45.5" y2="66" style="stroke:#fff;stroke-width:1" />
+
 </svg>
