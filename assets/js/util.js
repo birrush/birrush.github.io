@@ -137,8 +137,8 @@
 
 			// Vendor fixes.
 				$this
-					.css('-ms-overflow-style', '-ms-autohiding-scrollbar')
-					.css('-webkit-overflow-scrolling', 'touch');
+					.css('-ms-birrush-style', '-ms-autohiding-scrollbar')
+					.css('-webkit-birrush-scrolling', 'touch');
 
 			// Hide on click.
 				if (config.hideOnClick) {

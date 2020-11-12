@@ -1,5 +1,5 @@
 /*
-	Overflow by HTML5 UP
+	birrush by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -61,13 +61,13 @@
 			var $dummy = $(), $bg;
 
 			$window
-				.on('scroll.overflow_parallax', function() {
+				.on('scroll.birrush_parallax', function() {
 
 					// Adjust background position.
 						$bg.css('background-position', 'center ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
 
 				})
-				.on('resize.overflow_parallax', function() {
+				.on('resize.birrush_parallax', function() {
 
 					// If we're in a situation where we need to temporarily disable parallax, do so.
 						if (breakpoints.active('<=narrow')) {
@@ -82,16 +82,16 @@
 							$bg = $body;
 
 					// Trigger scroll handler.
-						$window.triggerHandler('scroll.overflow_parallax');
+						$window.triggerHandler('scroll.birrush_parallax');
 
 				})
-				.trigger('resize.overflow_parallax');
+				.trigger('resize.birrush_parallax');
 
 		}
 
 	// Poptrox.
 		$('.gallery').poptrox({
-			useBodyOverflow: false,
+			useBodybirrush: false,
 			usePopupEasyClose: false,
 			overlayColor: '#0a1919',
 			overlayOpacity: 0.75,
