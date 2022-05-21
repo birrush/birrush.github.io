@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>勁 爆 坦 克 大 戰</title>
+
+</head>
+<body onkeydown="getCommand();">
+    <h3>能 玩 就 行</h3>
+   <canvas id="tankMap" width="600px" height="500px" 
+   style="background-color:black"></canvas>
+   <br/>
+   <span id="bb" text-align:center>WASD键位小游戏常用攻击键（笑） Q复活 E增加敌人</span>
+   <script  type="text/javascript" src="Mytank9.js"></script>
+   <script type="text/javascript">
+   var canvas1=document.getElementById("tankMap");
+   var cxt=canvas1.getContext("2d");
+   var hero=new Hero(240,300,0,heroColor);
+   var heroBullets=new Array();
+   var bombs=new Array();  
+   var enemyBullets=new Array();   
+   var enemyTanks=new Array(); 
+   for(var i=0;i<6;i++){
+     var enemyTank=new EnemTank((i+1)*70,30,2,enemyColor);
+	 enemyTanks[i]=enemyTank;
+	 window.setInterval("enemyTanks["+i+"].run()","69");
+	var eb=new Bullet(enemyTanks[i].x+19,enemyTanks[i].y+60,2,5,"enemy",enemyTanks[i]);
+	enemyBullets[i]=eb;
+	var ettimer=window.setInterval("enemyBullets["+i+"].run()",69);
+	enemyBullets[i].timer=ettimer; 
+   }
+   flashTankMap();
+   function flashTankMap(){
+      cxt.clearRect(0,0,600,500);
+	  
+ 	  
+	  if(hero.isLive==true){
+          drawTank(hero);
+	  }else{
+	      hero.x=-100;
+		  hero.y=-100;
+	  }
+	  drawHeroBullet();
+	  isHitEenemyTank();
+	  drawEnemyBomb();
+	  isHitHeroTank();
+	  for(var i=0;i<enemyTanks.length;i++){	
+	    drawTank(enemyTanks[i]);
+	 }
+	 drawEnemyBullet();
+   }
+   function getCommand(){
+     var code=event.keyCode;
+	 switch(code){
+	 case 87:
+	 hero.moveUp();
+	 break;
+	 case 68:
+	 hero.moveRight();
+	 break;
+	 case 83:
+	 hero.moveDown();
+	 break;
+	 case 65:
+	 hero.moveLeft();
+	 break;	
+     case 74:
+	   hero.shotEnemy();
+     break;	
+     case 81:
+	     hero.isLive=true;
+		 hero.x=240;
+		 hero.y=300;
+     break;	
+     case 69:
+	 FoundEnemyTank(enemyTanks.length);
+     break;	 
+	 } 
+	flashTankMap();
+   } 
+   window.setInterval("flashTankMap();",100);
+   
+   </script>
+</body>
+</html>
