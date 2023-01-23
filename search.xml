@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>模式识别笔记</title>
+      <link href="/2022/11/29/hello-world-fu-ben/"/>
+      <url>/2022/11/29/hello-world-fu-ben/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/assets/img/philly-magic-garden.jpg" alt="这是图片" title="Magic Gardens"></p><p>##1.绪论<br>基本概念  目的 各部分作用 两个核心：特征提取和分类器设计 学习过程 训练集合测试机 设计的五个步骤 监督的概念</p><p>##2.分类算法  </p><p>##3.聚类算法  </p><p>##4.特征提取与选择  </p><p>##5.组合分类器  </p><p>##6.半监督学习<br>前提假设：<br>-聚类假设<br>-流行假设<br>-半监督假设</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>oc（方舟）</title>
       <link href="/2022/05/24/oc/"/>
       <url>/2022/05/24/oc/</url>
